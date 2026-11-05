@@ -1,0 +1,782 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Settings xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<selection>
+		<item xsi:type="SelectedItemField">
+			<use>false</use>
+			<field>МастерСмены</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<use>false</use>
+			<field>Руководитель</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<use>false</use>
+			<field>ЧасоваяСтавка</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<use>false</use>
+			<field>ЧасоваяСтавкаТ</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<use>false</use>
+			<field>Категория</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ДлитСмены</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<use>false</use>
+			<field>Смена</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ОтработаноЧасов</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<use>false</use>
+			<field>ОтработаноБезЛиний</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<use>false</use>
+			<field>ПлановыйКДВ</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>КРВО</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>КДВ</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>СуммаОкладнойЧасти</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>СуммаЛиния</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>СуммаШтрафа</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>СуммаПремииЗаСоблюдениеРегламентов</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>СуммаПремииЗаРаботуСверхГрафика</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ИтогоЗаСмену</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ИтогоНачислено</field>
+		</item>
+		<item xsi:type="SelectedItemFolder">
+			<use>false</use>
+			<lwsTitle>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выпущенный брак</v8:content>
+				</v8:item>
+			</lwsTitle>
+			<item xsi:type="SelectedItemFolder">
+				<lwsTitle>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Обнаружено на заводе</v8:content>
+					</v8:item>
+				</lwsTitle>
+				<item xsi:type="SelectedItemField">
+					<field>БракЗаводЛ</field>
+					<lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>л.</v8:content>
+						</v8:item>
+					</lwsTitle>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<field>БракЗаводРуб</field>
+					<lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>руб.</v8:content>
+						</v8:item>
+					</lwsTitle>
+				</item>
+				<placement>Horizontally</placement>
+			</item>
+			<item xsi:type="SelectedItemFolder">
+				<lwsTitle>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Обнаружено у клиента</v8:content>
+					</v8:item>
+				</lwsTitle>
+				<item xsi:type="SelectedItemField">
+					<field>БракУКлиентаЛ</field>
+					<lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>л.</v8:content>
+						</v8:item>
+					</lwsTitle>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<field>БракУКлиентаРуб</field>
+					<lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>руб.</v8:content>
+						</v8:item>
+					</lwsTitle>
+				</item>
+				<placement>Horizontally</placement>
+			</item>
+			<item xsi:type="SelectedItemFolder">
+				<lwsTitle>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Итого</v8:content>
+					</v8:item>
+				</lwsTitle>
+				<item xsi:type="SelectedItemField">
+					<field>ИтогоЛБрак</field>
+					<lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>л.</v8:content>
+						</v8:item>
+					</lwsTitle>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<field>ИтогоРубБрак</field>
+					<lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>руб.</v8:content>
+						</v8:item>
+					</lwsTitle>
+				</item>
+				<placement>Horizontally</placement>
+			</item>
+			<placement>Auto</placement>
+		</item>
+	</selection>
+	<dataParameters>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>ПериодОтчета</dcscor:parameter>
+			<dcscor:value xsi:type="v8:StandardPeriod">
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</dcscor:value>
+			<userSettingID>4d7c95f6-abec-41c5-861d-b4777810b9c8</userSettingID>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>КлючВарианта</dcscor:parameter>
+			<dcscor:value xsi:type="xs:string">Основной</dcscor:value>
+		</dcscor:item>
+	</dataParameters>
+	<conditionalAppearance>
+		<item>
+			<selection>
+				<item>
+					<field>Смена</field>
+				</item>
+				<item>
+					<field>ДлитСмены</field>
+				</item>
+			</selection>
+			<filter/>
+			<appearance>
+				<dcscor:item xsi:type="SettingsParameterValue">
+					<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+					<dcscor:value xsi:type="v8ui:HorizontalAlign">Right</dcscor:value>
+				</dcscor:item>
+			</appearance>
+			<useInFieldsHeader>DontUse</useInFieldsHeader>
+			<useInHeader>DontUse</useInHeader>
+			<useInResourceFieldsHeader>DontUse</useInResourceFieldsHeader>
+			<useInOverallHeader>DontUse</useInOverallHeader>
+			<useInOverallResourceFieldsHeader>DontUse</useInOverallResourceFieldsHeader>
+		</item>
+		<item>
+			<selection>
+				<item>
+					<field>ЧасыПоГрафикуЗаВычетомБольничных</field>
+				</item>
+			</selection>
+			<filter/>
+			<appearance>
+				<dcscor:item xsi:type="SettingsParameterValue">
+					<dcscor:parameter>Шрифт</dcscor:parameter>
+					<dcscor:value xsi:type="v8ui:Font" ref="style:TextFont" faceName="MS Shell Dlg" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+				</dcscor:item>
+			</appearance>
+			<useInGroup>DontUse</useInGroup>
+			<useInHierarchicalGroup>DontUse</useInHierarchicalGroup>
+			<useInOverall>DontUse</useInOverall>
+			<useInHeader>DontUse</useInHeader>
+			<useInParameters>DontUse</useInParameters>
+			<useInFilter>DontUse</useInFilter>
+			<useInResourceFieldsHeader>DontUse</useInResourceFieldsHeader>
+			<useInOverallResourceFieldsHeader>DontUse</useInOverallResourceFieldsHeader>
+		</item>
+	</conditionalAppearance>
+	<outputParameters>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>МакетОформления</dcscor:parameter>
+			<dcscor:value xsi:type="xs:string">Основной</dcscor:value>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>РасположениеИтогов</dcscor:parameter>
+			<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">Auto</dcscor:value>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>ГоризонтальноеРасположениеОбщихИтогов</dcscor:parameter>
+			<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
+			<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">End</dcscor:value>
+		</dcscor:item>
+	</outputParameters>
+	<item xsi:type="StructureItemTable">
+		<column>
+			<groupItems>
+				<item xsi:type="GroupItemField">
+					<field>Дата</field>
+					<groupType>Items</groupType>
+					<periodAdditionType>None</periodAdditionType>
+					<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+					<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+				</item>
+			</groupItems>
+			<order>
+				<item xsi:type="OrderItemAuto"/>
+			</order>
+			<selection>
+				<item xsi:type="SelectedItemField">
+					<field>Дата</field>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<field>ДлитСмены</field>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<field>КоличествоГрубыхНарушений</field>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<field>КолВоАдминНарушений</field>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<field>КолВоНарушенийТехнологическогоХарактера</field>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<field>КРВО</field>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<field>ОтрабЧасовСумма</field>
+					<lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Фактически отработано часов</v8:content>
+						</v8:item>
+					</lwsTitle>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<field>КДВ</field>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<field>СуммаПремииЗаРаботуНаДопЛинии</field>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<field>СуммаОкладнойЧасти</field>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<field>СуммаЛиния</field>
+					<lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма премии за КДВ</v8:content>
+						</v8:item>
+					</lwsTitle>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<use>false</use>
+					<field>СуммаШтрафа</field>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<field>ИтогоЗаСмену</field>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<use>false</use>
+					<field>ЧасыПоГрафикуЗаВычетомБольничных</field>
+					<lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Часы по графику (за вычетом больничных)</v8:content>
+						</v8:item>
+					</lwsTitle>
+				</item>
+			</selection>
+			<outputParameters/>
+		</column>
+		<column>
+			<groupItems>
+				<item xsi:type="GroupItemField">
+					<field>Итог</field>
+					<groupType>Items</groupType>
+					<periodAdditionType>None</periodAdditionType>
+					<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+					<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+				</item>
+			</groupItems>
+			<order>
+				<item xsi:type="OrderItemField">
+					<field>Итог</field>
+					<orderType>Asc</orderType>
+				</item>
+			</order>
+			<selection>
+				<item xsi:type="SelectedItemFolder">
+					<lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Итого за период</v8:content>
+						</v8:item>
+					</lwsTitle>
+					<item xsi:type="SelectedItemAuto">
+						<use>false</use>
+					</item>
+					<item xsi:type="SelectedItemField">
+						<field>СуммаШтрафа</field>
+						<lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Уменьшение премии</v8:content>
+							</v8:item>
+						</lwsTitle>
+					</item>
+					<item xsi:type="SelectedItemField">
+						<field>КоличествоГрубыхНарушений</field>
+					</item>
+					<item xsi:type="SelectedItemField">
+						<field>КолВоАдминНарушений</field>
+					</item>
+					<item xsi:type="SelectedItemField">
+						<field>КолВоНарушенийТехнологическогоХарактера</field>
+					</item>
+					<item xsi:type="SelectedItemField">
+						<field>ЧасыПоГрафикуЗаВычетомБольничных</field>
+					</item>
+					<item xsi:type="SelectedItemField">
+						<field>ОтработаноЧасов</field>
+						<lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Факт. отработано часов</v8:content>
+							</v8:item>
+						</lwsTitle>
+					</item>
+					<item xsi:type="SelectedItemField">
+						<field>ОтработаноСверхГрафика</field>
+						<lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Отработано часов сверх графика</v8:content>
+							</v8:item>
+						</lwsTitle>
+					</item>
+					<item xsi:type="SelectedItemField">
+						<field>СрКРВО</field>
+						<lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Средний КРВО</v8:content>
+							</v8:item>
+						</lwsTitle>
+					</item>
+					<item xsi:type="SelectedItemField">
+						<field>СреднийПлановыйКДВ</field>
+						<lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Средний план. КДВ</v8:content>
+							</v8:item>
+						</lwsTitle>
+					</item>
+					<item xsi:type="SelectedItemField">
+						<field>ПроцКДВ</field>
+						<lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Откл-е факт. КДВ от план.</v8:content>
+							</v8:item>
+						</lwsTitle>
+					</item>
+					<item xsi:type="SelectedItemField">
+						<field>СуммаОкладнойЧасти</field>
+					</item>
+					<item xsi:type="SelectedItemField">
+						<field>СуммаЛиния</field>
+						<lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Сумма премии за КДВ</v8:content>
+							</v8:item>
+						</lwsTitle>
+					</item>
+					<item xsi:type="SelectedItemField">
+						<field>СуммаПремииЗаСоблюдениеРегламентов</field>
+					</item>
+					<item xsi:type="SelectedItemField">
+						<field>СуммаПремииЗаРаботуНаДопЛинии</field>
+					</item>
+					<item xsi:type="SelectedItemField">
+						<field>СуммаПремииЗаРаботуСверхГрафика</field>
+					</item>
+					<item xsi:type="SelectedItemField">
+						<use>false</use>
+						<field>ИтогоНачисленно</field>
+					</item>
+					<item xsi:type="SelectedItemField">
+						<use>false</use>
+						<field>СуммаПланоЧасов</field>
+					</item>
+					<item xsi:type="SelectedItemFolder">
+						<use>false</use>
+						<lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Выпущенный брак итог</v8:content>
+							</v8:item>
+						</lwsTitle>
+						<item xsi:type="SelectedItemFolder">
+							<lwsTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Обнаружено на заводе</v8:content>
+								</v8:item>
+							</lwsTitle>
+							<item xsi:type="SelectedItemField">
+								<field>БракЗаводЛ</field>
+								<lwsTitle>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Л.</v8:content>
+									</v8:item>
+								</lwsTitle>
+							</item>
+							<item xsi:type="SelectedItemField">
+								<field>БракЗаводРуб</field>
+								<lwsTitle>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Руб.</v8:content>
+									</v8:item>
+								</lwsTitle>
+							</item>
+							<placement>Horizontally</placement>
+						</item>
+						<item xsi:type="SelectedItemFolder">
+							<lwsTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Обнаружено у клиента</v8:content>
+								</v8:item>
+							</lwsTitle>
+							<item xsi:type="SelectedItemField">
+								<field>БракУКлиентаЛ</field>
+								<lwsTitle>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Л.</v8:content>
+									</v8:item>
+								</lwsTitle>
+							</item>
+							<item xsi:type="SelectedItemField">
+								<field>БракУКлиентаРуб</field>
+								<lwsTitle>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Руб.</v8:content>
+									</v8:item>
+								</lwsTitle>
+							</item>
+							<placement>Horizontally</placement>
+						</item>
+						<item xsi:type="SelectedItemFolder">
+							<lwsTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Итог</v8:content>
+								</v8:item>
+							</lwsTitle>
+							<item xsi:type="SelectedItemField">
+								<field>ИтогоЛБрак</field>
+								<lwsTitle>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Л.</v8:content>
+									</v8:item>
+								</lwsTitle>
+							</item>
+							<item xsi:type="SelectedItemField">
+								<field>ИтогоРубБрак</field>
+								<lwsTitle>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Руб.</v8:content>
+									</v8:item>
+								</lwsTitle>
+							</item>
+							<placement>Horizontally</placement>
+						</item>
+						<placement>Auto</placement>
+					</item>
+					<item xsi:type="SelectedItemField">
+						<field>ИтогоНачислено</field>
+					</item>
+					<item xsi:type="SelectedItemField">
+						<field>ИтоговаяСтавка</field>
+					</item>
+					<placement>Horizontally</placement>
+				</item>
+			</selection>
+			<conditionalAppearance>
+				<item>
+					<selection/>
+					<filter/>
+					<appearance>
+						<dcscor:item xsi:type="SettingsParameterValue">
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+						</dcscor:item>
+					</appearance>
+					<useInGroup>DontUse</useInGroup>
+					<useInHierarchicalGroup>DontUse</useInHierarchicalGroup>
+					<useInOverall>DontUse</useInOverall>
+					<useInParameters>DontUse</useInParameters>
+					<useInFilter>DontUse</useInFilter>
+				</item>
+			</conditionalAppearance>
+			<outputParameters>
+				<dcscor:item xsi:type="SettingsParameterValue">
+					<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+					<dcscor:value xsi:type="DataCompositionTextOutputType">Output</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Итог за месяц</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</outputParameters>
+		</column>
+		<row>
+			<groupItems>
+				<item xsi:type="GroupItemField">
+					<field>ФИО</field>
+					<groupType>Items</groupType>
+					<periodAdditionType>None</periodAdditionType>
+					<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+					<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+				</item>
+				<item xsi:type="GroupItemField">
+					<field>Категория</field>
+					<groupType>Items</groupType>
+					<periodAdditionType>None</periodAdditionType>
+					<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+					<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+				</item>
+			</groupItems>
+			<order>
+				<item xsi:type="OrderItemAuto"/>
+			</order>
+			<selection>
+				<item xsi:type="SelectedItemField">
+					<field>ФИО</field>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<field>Категория</field>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<field>ДлитСмены</field>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<field>ОтработаноЧасов</field>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<field>КРВО</field>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<field>КДВ</field>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<field>СуммаОкладнойЧасти</field>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<field>СуммаЛиния</field>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<field>СуммаШтрафа</field>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<field>СуммаПремииЗаСоблюдениеРегламентов</field>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<field>СуммаПремииЗаРаботуСверхГрафика</field>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<field>ИтогоЗаСмену</field>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<field>ИтогоНачислено</field>
+				</item>
+			</selection>
+			<outputParameters/>
+			<item>
+				<groupItems>
+					<item xsi:type="GroupItemField">
+						<field>ЛинияРозлива</field>
+						<groupType>Items</groupType>
+						<periodAdditionType>None</periodAdditionType>
+						<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+						<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+					</item>
+					<item xsi:type="GroupItemField">
+						<field>МастерСмены</field>
+						<groupType>Items</groupType>
+						<periodAdditionType>None</periodAdditionType>
+						<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+						<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+					</item>
+					<item xsi:type="GroupItemField">
+						<field>Руководитель</field>
+						<groupType>Items</groupType>
+						<periodAdditionType>None</periodAdditionType>
+						<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+						<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+					</item>
+					<item xsi:type="GroupItemField">
+						<field>ЧасоваяСтавка</field>
+						<groupType>Items</groupType>
+						<periodAdditionType>None</periodAdditionType>
+						<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+						<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+					</item>
+					<item xsi:type="GroupItemField">
+						<field>ЧасоваяСтавкаТ</field>
+						<groupType>Items</groupType>
+						<periodAdditionType>None</periodAdditionType>
+						<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+						<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+					</item>
+					<item xsi:type="GroupItemField">
+						<field>ПлановыйКДВ</field>
+						<groupType>Items</groupType>
+						<periodAdditionType>None</periodAdditionType>
+						<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+						<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+					</item>
+				</groupItems>
+				<order>
+					<item xsi:type="OrderItemAuto"/>
+				</order>
+				<selection>
+					<item xsi:type="SelectedItemField">
+						<field>ЛинияРозлива</field>
+					</item>
+					<item xsi:type="SelectedItemField">
+						<field>МастерСмены</field>
+					</item>
+					<item xsi:type="SelectedItemField">
+						<field>Руководитель</field>
+					</item>
+					<item xsi:type="SelectedItemField">
+						<field>ЧасоваяСтавка</field>
+					</item>
+					<item xsi:type="SelectedItemField">
+						<field>ЧасоваяСтавкаТ</field>
+					</item>
+					<item xsi:type="SelectedItemField">
+						<field>ПлановыйКДВ</field>
+					</item>
+					<item xsi:type="SelectedItemField">
+						<field>ДлитСмены</field>
+					</item>
+					<item xsi:type="SelectedItemField">
+						<use>false</use>
+						<field>Смена</field>
+					</item>
+					<item xsi:type="SelectedItemField">
+						<field>ОтработаноЧасов</field>
+					</item>
+					<item xsi:type="SelectedItemField">
+						<field>КРВО</field>
+					</item>
+					<item xsi:type="SelectedItemField">
+						<field>КДВ</field>
+					</item>
+					<item xsi:type="SelectedItemField">
+						<field>СуммаОкладнойЧасти</field>
+					</item>
+					<item xsi:type="SelectedItemField">
+						<field>СуммаЛиния</field>
+					</item>
+					<item xsi:type="SelectedItemField">
+						<field>СуммаШтрафа</field>
+					</item>
+					<item xsi:type="SelectedItemField">
+						<field>СуммаПремииЗаРаботуСверхГрафика</field>
+					</item>
+					<item xsi:type="SelectedItemField">
+						<field>СуммаПремииЗаСоблюдениеРегламентов</field>
+					</item>
+					<item xsi:type="SelectedItemField">
+						<field>ИтогоЗаСмену</field>
+					</item>
+				</selection>
+				<outputParameters/>
+				<item>
+					<use>false</use>
+					<order>
+						<item xsi:type="OrderItemAuto"/>
+					</order>
+					<selection>
+						<item xsi:type="SelectedItemField">
+							<field>ДлитСмены</field>
+						</item>
+						<item xsi:type="SelectedItemField">
+							<field>Смена</field>
+						</item>
+						<item xsi:type="SelectedItemField">
+							<field>ОтработаноЧасов</field>
+						</item>
+						<item xsi:type="SelectedItemField">
+							<field>КРВО</field>
+						</item>
+						<item xsi:type="SelectedItemField">
+							<field>КДВ</field>
+						</item>
+						<item xsi:type="SelectedItemField">
+							<field>СуммаОкладнойЧасти</field>
+						</item>
+						<item xsi:type="SelectedItemField">
+							<field>СуммаЛиния</field>
+						</item>
+						<item xsi:type="SelectedItemField">
+							<field>СуммаШтрафа</field>
+						</item>
+						<item xsi:type="SelectedItemField">
+							<field>ИтогоЗаСмену</field>
+						</item>
+					</selection>
+					<outputParameters/>
+				</item>
+			</item>
+		</row>
+		<outputParameters/>
+	</item>
+</Settings>

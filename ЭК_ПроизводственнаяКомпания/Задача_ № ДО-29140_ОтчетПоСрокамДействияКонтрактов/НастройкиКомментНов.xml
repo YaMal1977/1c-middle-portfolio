@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Settings xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<selection>
+		<item xsi:type="SelectedItemField">
+			<field>ЛимитПоКонтракту</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>СуммаРеализаций</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Комментарий</field>
+		</item>
+	</selection>
+	<filter>
+		<item xsi:type="FilterItemComparison">
+			<left xsi:type="dcscor:Field">Договор</left>
+			<comparisonType>Equal</comparisonType>
+			<userSettingID>ecfd80bc-4095-40e8-87e2-005eb82313bd</userSettingID>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<left xsi:type="dcscor:Field">Контрагент</left>
+			<comparisonType>Equal</comparisonType>
+			<userSettingID>1060f39f-04dc-4d5d-a62b-732bc8002d26</userSettingID>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<left xsi:type="dcscor:Field">Партнер</left>
+			<comparisonType>Equal</comparisonType>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<left xsi:type="dcscor:Field">Статус</left>
+			<comparisonType>Equal</comparisonType>
+			<userSettingID>babbd245-7b6d-4064-be8f-10f0be85d291</userSettingID>
+			<userSettingPresentation xsi:type="xs:string">Статус договора</userSettingPresentation>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<left xsi:type="dcscor:Field">Дата</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="v8:StandardBeginningDate">
+				<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
+				<v8:date>0001-01-01T00:00:00</v8:date>
+			</right>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<left xsi:type="dcscor:Field">ДатаОкончанияДействия</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="v8:StandardBeginningDate">
+				<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
+				<v8:date>0001-01-01T00:00:00</v8:date>
+			</right>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<left xsi:type="dcscor:Field">Организация</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="dcscor:Field"/>
+			<userSettingID>8c23df50-bbe8-4525-b363-d242012076d2</userSettingID>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<left xsi:type="dcscor:Field">Контрагент.ЭК_СегментКлиентаОсновной</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="dcscor:Field"/>
+			<userSettingID>4f5799c2-4c56-4ce7-96b7-9dd309aa7106</userSettingID>
+			<userSettingPresentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основной сегмент</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Контрагент</v8:content>
+				</v8:item>
+			</userSettingPresentation>
+		</item>
+	</filter>
+	<conditionalAppearance>
+		<item>
+			<selection/>
+			<filter>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ЛимитНеПревышает15Проц</left>
+					<comparisonType>Equal</comparisonType>
+					<right xsi:type="xs:boolean">true</right>
+				</item>
+			</filter>
+			<appearance>
+				<dcscor:item xsi:type="SettingsParameterValue">
+					<dcscor:parameter>ЦветФона</dcscor:parameter>
+					<dcscor:value xsi:type="v8ui:Color">#FFA07A</dcscor:value>
+				</dcscor:item>
+			</appearance>
+			<viewMode>Normal</viewMode>
+			<userSettingID>22d5f133-a208-4fff-b578-179b01064259</userSettingID>
+		</item>
+	</conditionalAppearance>
+	<outputParameters/>
+	<item xsi:type="StructureItemGroup">
+		<groupItems>
+			<item xsi:type="GroupItemField">
+				<field>Партнер</field>
+				<groupType>Items</groupType>
+				<periodAdditionType>None</periodAdditionType>
+				<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+				<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+			</item>
+			<item xsi:type="GroupItemField">
+				<field>Контрагент</field>
+				<groupType>Items</groupType>
+				<periodAdditionType>None</periodAdditionType>
+				<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+				<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+			</item>
+			<item xsi:type="GroupItemField">
+				<field>Договор</field>
+				<groupType>Items</groupType>
+				<periodAdditionType>None</periodAdditionType>
+				<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+				<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+			</item>
+			<item xsi:type="GroupItemField">
+				<field>Номер</field>
+				<groupType>Items</groupType>
+				<periodAdditionType>None</periodAdditionType>
+				<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+				<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+			</item>
+			<item xsi:type="GroupItemField">
+				<field>Дата</field>
+				<groupType>Items</groupType>
+				<periodAdditionType>None</periodAdditionType>
+				<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+				<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+			</item>
+			<item xsi:type="GroupItemField">
+				<field>ДатаОкончанияДействия</field>
+				<groupType>Items</groupType>
+				<periodAdditionType>None</periodAdditionType>
+				<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+				<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+			</item>
+			<item xsi:type="GroupItemField">
+				<field>Статус</field>
+				<groupType>Items</groupType>
+				<periodAdditionType>None</periodAdditionType>
+				<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+				<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+			</item>
+			<item xsi:type="GroupItemField">
+				<field>ВалютаВзаиморасчетов</field>
+				<groupType>Items</groupType>
+				<periodAdditionType>None</periodAdditionType>
+				<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+				<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+			</item>
+		</groupItems>
+		<order>
+			<item xsi:type="OrderItemAuto"/>
+		</order>
+		<selection>
+			<item xsi:type="SelectedItemField">
+				<field>Партнер</field>
+			</item>
+			<item xsi:type="SelectedItemField">
+				<field>Контрагент</field>
+			</item>
+			<item xsi:type="SelectedItemField">
+				<field>Договор</field>
+			</item>
+			<item xsi:type="SelectedItemField">
+				<field>Номер</field>
+			</item>
+			<item xsi:type="SelectedItemField">
+				<field>Дата</field>
+			</item>
+			<item xsi:type="SelectedItemField">
+				<field>ДатаОкончанияДействия</field>
+			</item>
+			<item xsi:type="SelectedItemField">
+				<field>Статус</field>
+			</item>
+			<item xsi:type="SelectedItemField">
+				<field>ВалютаВзаиморасчетов</field>
+			</item>
+			<item xsi:type="SelectedItemField">
+				<field>ЛимитПоКонтракту</field>
+			</item>
+			<item xsi:type="SelectedItemField">
+				<field>СуммаРеализаций</field>
+			</item>
+			<item xsi:type="SelectedItemField">
+				<field>Комментарий</field>
+			</item>
+		</selection>
+		<outputParameters>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>АвтоПозицияРесурсов</dcscor:parameter>
+				<dcscor:value xsi:type="DataCompositionResourcesAutoPosition">AfterAllFields</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ВариантИспользованияГруппировки</dcscor:parameter>
+				<dcscor:value xsi:type="DataCompositionGroupUseVariant">Auto</dcscor:value>
+			</dcscor:item>
+		</outputParameters>
+	</item>
+</Settings>
